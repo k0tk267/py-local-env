@@ -12,3 +12,6 @@ stop:
 
 down:
 	docker-compose down
+
+jupyter:
+	docker-compose run -p 8080:8080 python3

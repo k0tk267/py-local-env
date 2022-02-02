@@ -3,8 +3,11 @@ services:
   python3:
     restart: always
     build: .
+    ports:
+      - "8888:8888"
     container_name: 'python3'
     working_dir: '/root/'
+    command: /bin/bash
     tty: true
     volumes:
       - ./opt:/root/opt
